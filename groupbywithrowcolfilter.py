@@ -1,79 +1,17 @@
-import mysql.connector
-import datetime
+from pivottablejs import pivot_ui
+from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode, DataReturnMode
+from st_aggrid import AgGrid, GridOptionsBuilder, JsCode
+from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode, ColumnsAutoSizeMode
+from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode, DataReturnMode
+from st_aggrid import JsCode, AgGrid, GridOptionsBuilder
+from st_aggrid.shared import ColumnsAutoSizeMode
+from st_aggrid.shared import GridUpdateMode
 import numpy as np
 import os
+import pandas as pd
+import streamlit as st
 import streamlit.components.v1 as components
-import pandas as pd
-import streamlit as st
-import matplotlib.pyplot as plt
-from matplotlib.cm import get_cmap
-import numpy as np
-import matplotlib.pyplot as plt
-import numpy
-import streamlit as st
-import matplotlib.pyplot as plt
-import streamlit as st
-import pandas as pd
-from st_aggrid import JsCode, AgGrid, GridOptionsBuilder
-from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode, ColumnsAutoSizeMode
-from st_aggrid.shared import GridUpdateMode
-
-from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode, DataReturnMode
-from st_aggrid.shared import ColumnsAutoSizeMode
-import streamlit as st
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import matplotlib
-matplotlib.use('Agg')       #서버에서, 화면에 표시하기 위해서 필요
-import seaborn as sns
-import altair as alt               ##https://altair-viz.github.io/
-import plotly.express as px
-import matplotlib.pyplot as plt
-import numpy as np
-
-import numpy as np
-import streamlit.components.v1 as components
-from pivottablejs import pivot_ui
-import pandas as pd
-import streamlit as st
-import pandas as pd
-from st_aggrid import AgGrid, GridOptionsBuilder
-
-
-
-import numpy
-import streamlit as st
-import matplotlib.pyplot as plt
-import streamlit as st
-import pandas as pd
-from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode, DataReturnMode
-from st_aggrid.shared import ColumnsAutoSizeMode
-import streamlit as st
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import matplotlib
-matplotlib.use('Agg')       #서버에서, 화면에 표시하기 위해서 필요
-import seaborn as sns
-import altair as alt               ##https://altair-viz.github.io/
-import plotly.express as px
-import matplotlib.pyplot as plt
-import numpy as np
-import streamlit.components.v1 as components
-
-import os 
-import numpy as np
-import streamlit as st
-import pandas as pd
-from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode, DataReturnMode
-from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode, DataReturnMode
-from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode, DataReturnMode
-from st_aggrid.shared import ColumnsAutoSizeMode
-from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode
-from st_aggrid import AgGrid, GridOptionsBuilder, JsCode
-from collections import defaultdict
-from st_aggrid import AgGrid, GridOptionsBuilder
+import mysql.connector
 
 st.set_page_config(layout="wide")
 
