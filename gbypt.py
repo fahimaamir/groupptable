@@ -11,7 +11,7 @@ import os
 import pandas as pd
 import streamlit as st
 import streamlit.components.v1 as components
-import mysql.connector
+#import mysql.connector
 
 st.set_page_config(layout="wide")
 
